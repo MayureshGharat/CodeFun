@@ -63,13 +63,13 @@ public class Heap {
             smallest = left;
             currRacer = heapArray[left];
         }
-        else if(left < heapSize-1 && leftRacer.getStart() < currRacer.getStart() && leftRacer.getId() > currRacer.getId())
-        {
-            int score = currRacer.getScore();
-            currRacer.setScore(++score);
-            smallest = left;
-            currRacer = heapArray[left];
-        }
+//        else if(left < heapSize-1 && leftRacer.getStart() < currRacer.getStart() && leftRacer.getId() > currRacer.getId())
+//        {
+//            int score = currRacer.getScore();
+//            currRacer.setScore(++score);
+//            smallest = left;
+//            currRacer = heapArray[left];
+//        }
 
         if(right < heapSize-1 && rightRacer.getStart() > currRacer.getStart() && rightRacer.getEnd() < currRacer.getEnd())
         {
@@ -78,13 +78,13 @@ public class Heap {
             smallest = right;
             currRacer = heapArray[right];
         }
-        else if(right < heapSize-1 && rightRacer.getStart() < currRacer.getStart() && rightRacer.getId() > currRacer.getId())
-        {
-            int score = currRacer.getScore();
-            currRacer.setScore(++score);
-            smallest = right;
-            currRacer = heapArray[right];
-        }
+//        else if(right < heapSize-1 && rightRacer.getStart() < currRacer.getStart() && rightRacer.getId() > currRacer.getId())
+//        {
+//            int score = currRacer.getScore();
+//            currRacer.setScore(++score);
+//            smallest = right;
+//            currRacer = heapArray[right];
+//        }
 
         if(smallest != i)
         {
